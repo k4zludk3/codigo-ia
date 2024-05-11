@@ -13,16 +13,16 @@ print(data)
 
 # variável chamada valor secreto que armazena uma tecnologia aleatória da lista
 valor_secreto = random.choice(data)
-# variável para armazenar apenas a palavra
 palavra_secreta = valor_secreto['palavra']
-# variável para armazenar apenas a dica
 dica = valor_secreto['dica']
-# mostrou na tela quantas letras a palavra secreta possui e a dica
+
+# exibir na tela quantas letras a palavra secreta possui e a dica
 # o f é capaz de juntar/combinar palavras e variáveis
 # print(f'A palavra secreta tem {len(palavra_secreta)} letras -> {dica}')
-# receber o chute ou palpite da tecnologia
 print(f'A palavra secreta tem {len(palavra_secreta)} letras')
 print(f'A dica é -> {dica}')
+
+# input para receber o chute ou palpite da tecnologia
 chute = input('O que você acha que é ')
 if chute == palavra_secreta:
   print('Acertou')
